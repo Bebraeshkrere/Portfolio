@@ -22,9 +22,34 @@
           <h1>Главная</h1>
           <h1>Новости</h1>
           <h1>Контакты</h1>
+          <button class="btn-contact" id="open">sign in</button>
         </div>
       </nav>
     </header>
-    <main class="main"></main>
+    <dialog id="modal">
+      <p>
+        Далеко-далеко за словесными горами в стране гласных и согласных живут
+        рыбные тексты. Даль, подзаголовок переулка. Сих, но себя свой встретил
+        последний своего дорогу lorem вопроса точках силуэт текстов они он ты по
+        всей?
+      </p>
+    </dialog>
+    <main class="main">
+      <img src="./assets/img/kriper.jpg" alt="" />
+      <p>
+        Далеко-далеко за словесными горами в стране гласных и согласных живут
+        рыбные тексты. Взобравшись запятых безопасную она проектах, океана,
+        коварных грустный, первую составитель страна скатился снова обеспечивает
+        что рекламных злых дорогу текст родного.
+      </p>
+    </main>
   </body>
+  <script>
+    let open = document.getElementById("open");
+    let modal = document.getElementById("modal");
+
+    open.onclick = () => {
+      modal.showModal();
+    };
+  </script>
 </html>

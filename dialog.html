@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dialog id="modal" open>
+      <h1>окно</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, soluta
+        ut repellendus laboriosam consectetur alias hic quaerat incidunt.
+        Debitis incidunt nulla dolorem nesciunt odio a quisquam veniam ipsam hic
+        consequuntur?
+      </p>
+      <button id="close">закрыть окно</button>
+    </dialog>
+    <button id="open">открыть окно</button>
+  </body>
+  <script>
+    let modal = document.getElementById("modal");
+    let open = document.getElementById("open");
+    let close = document.getElementById("close");
+
+    open.onclick = () => {
+      modal.showModal();
+    };
+
+    close.onclick = () => {
+      modal.close();
+    };
+
+    window.onclick = (e) => {
+      console.log("Нажали на сайт", e);
+    };
+  </script>
+</html>
